@@ -1,0 +1,31 @@
+Hvad gør metoden instanceof?
+
+    Instanceof operatoren tjekker om objektet er en instans af en specifik klasse.
+    Den returner et true/false udmelding.
+
+Hvad vil det sige at en metode er abstrakt?
+
+    Abstrakt klasser er klasser, som ikke kan laves instanser af. For at få adgang til en abstrakt
+    klasse, skal der først laves en klasse som nedarver af den abstrakte klasse.
+
+Kan man have en ikke-abstrakt klasse med en abstrakt metode? Hvis ikke, hvorfor ikke?
+
+    Nej. Hvis man prøver på dette, får man følgende besked:
+
+    Class '(navnet på klassen)' must either be declared abstract or
+    implement abstract method '(navnet på metoden)()' in '(navnet på klassen)'
+
+    Det vil sige, at det er ikke muligt af to årsager:
+
+    1) Klassen skal laves om til en abstrakt klasse.
+
+    eller
+
+    2) Klassen skal (extends) fra en abstrakt klasse, hvorefter den kan nedarves.
+
+    Men, der kan aldrig laves en ikke-abstrakt klasse med en abstrakt funktion.
+
+Hvad betyder @override?
+
+    Når en klasse nedarver en funktion fra en anden klasse, er det muligt, at @Override denne funktion.
+    Det vil sige, at overskride den med det nye, man gerne vil have den til at gøre.
