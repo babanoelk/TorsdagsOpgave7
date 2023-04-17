@@ -9,16 +9,21 @@ Der skal være en metode til at udregne cirklens areal. */
 public class Cirkel {
     private int radius;
 
-    public void setRadius(int radius) {
+    public void setRadius(int radius) throws IllegalArgumentException{
 
-        if (radius > 0) {
+        if(radius < 0){
+            throw new IllegalArgumentException("Skal være større end nul!");
+        }
+        this.radius = radius;
+
+        /*if (radius > 0) {
             this.radius = radius;
             System.out.println("Tallets radius er nu: " + this.radius);
         } else {
             System.out.println("Tallet skal være større end nul!");
             System.out.println("Cirklens radius blev ikke sat til! :" + this.radius);
 
-        }
+        }*/
     }
 
     public void doAreal() {

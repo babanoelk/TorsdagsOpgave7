@@ -29,9 +29,3 @@ Hvad betyder @override?
 
     Når en klasse nedarver en funktion fra en anden klasse, er det muligt, at @Override denne funktion.
     Det vil sige, at overskride den med det nye, man gerne vil have den til at gøre.
-
-    Eksempel
-                toString(),   printer en adresse ud.
-
-                @Override
-                toString(),   printer nu en tekst ud.
